@@ -18,6 +18,17 @@ TODO:
 * hardcoded gear types in resources/views/viewGear/list.blade.php
 * resources/views/newHome.blade.php is hardcoded
 * resources/views/layouts/newMain.blade.php is hardcoded
+* create sample apache .conf file
+* get example.env out of .gitignore
+
+Installion for apache:
+1. create.conf file
+2. composer install
+3. edit .env file
+3. log in to mySQL, create DB you list in .env 'create database mcms;'
+4. Dynamic link public directory for safety?: ln -s /var/www/MusiCMS/public /var/www/html/MusiCMS/public
+5. php artisan key:generate
+6. chmod 777 -R public/uploads/
 
 <!-- sudo apt-get install composer
 php composer.phar require intervention/image -->

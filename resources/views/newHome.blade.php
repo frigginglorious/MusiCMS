@@ -7,15 +7,15 @@
     <div class="container">
 
       <header id="homeHeader">
-        <img src="/images/very-large-white--logo.png" id="mainlogo">
+        <img src="/images/logo.jpg" id="mainlogo">
 
-        <h1 style="color:white; font-family:diehl;text-align:center;">Eau Claire, Wisconsin </h1>
+        <!-- <h1 style="color:white; font-family:diehl;text-align:center;">Tagline</h1> -->
 
       </header>
 
       <footer>
           <div class="videoWrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/SrZPOfStIJw" frameborder="0" allowfullscreen></iframe>
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe> -->
           </div>
         {{-- <a href="#about" class="button scrolly">About</a> --}}
       </footer>
