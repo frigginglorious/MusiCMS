@@ -24,33 +24,33 @@ body{height:100%;width:100%;
 
 }
 #home{
-	background:url('/images/bg-pic-4.jpg') fixed;
-	background-size:cover;	
+	background:url('/images/bg-pic-5.jpg') fixed;
+	background-size:cover;
 }
 #vibe{
 	background:url('/images/bg-pic-1.jpg') fixed;
-	background-size:cover;		
+	background-size:cover;
 }
 #gear{
 	background:url('/images/bg-pic-2.jpg') fixed;
-	background-size:cover;	
+	background-size:cover;
 }
 #contact{
 	background:url('/images/bg-pic-3.jpg') fixed;
-	background-size:cover;		
+	background-size:cover;
 }
 #clients{
 	background:url('/images/bg-pic-5.jpg') fixed;
-	background-size:cover;		
+	background-size:cover;
 }
 #about{
 	background:url('/images/bg-pic-6.jpg') fixed;
-	background-size:cover;	
+	background-size:cover;
 }
 #music{
 	background:url('/images/bg-pic-7.jpg') fixed;
-	background-size:cover;	
-	
+	background-size:cover;
+
 }
 
 #uplogo{
@@ -72,20 +72,20 @@ body{height:100%;width:100%;
 #nav a{
 	display:block;
 
-	margin:4px;			
+	margin:4px;
 	font-size:1.2em;
 	text-decoration:none;
 	color:white;
-	font-family:'diehl';	
-}	
+	font-family:'diehl';
+}
 #nav a:hover{
 	color:#fdc733;
-	
+
 }
 #nav a:hover:after{
 	content:"_";
 	color:#fdc733;
-	
+
 }
 
 #nav{background:rgba(0,0,0,.5);
@@ -96,7 +96,7 @@ body{height:100%;width:100%;
 	top:0px;
 	left:0px;
 
-}		
+}
 
 #content{
 	background:rgba(0,0,0,.85);
@@ -117,10 +117,10 @@ body{height:100%;width:100%;
 .clients ul li h2{
 	margin-left:-35px;
 	margin-top:20px;
-	font-family:'diehl';	
+	font-family:'diehl';
 }
 #content ul li{
-	
+
 	font-family: alegreya, serif;
 }
 #logo{
@@ -131,7 +131,7 @@ body{height:100%;width:100%;
 #slider{float:right;}
 
 #form {text-align:center;
-	font-family:'diehl';	
+	font-family:'diehl';
 	text-align:center;
 }
 
@@ -208,7 +208,7 @@ li .dim{
 			width:0%;
 			display:block;
 			clear: both;
-			pointer-events: none;	
+			pointer-events: none;
 		}
 		#nav{
 			position:static;
@@ -219,7 +219,7 @@ li .dim{
 			transition:height .2s;
 			z-index:999999;
 
-		}	
+		}
 /*ul, li {
     display: block;
     list-style: none;
@@ -236,7 +236,7 @@ li .dim{
     	color: red !important;
     }
 
-    .player{ 
+    .player{
     	width:60% !important;;
     }
     .player div{
