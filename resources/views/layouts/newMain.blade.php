@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-    <meta name="description" content="Professional recording studio with amazing vintage gear located in Eau Claire Wisconsin ">
+    <meta name="description" content="Musician's Portfolio / Content Management for an Electronic Press Kit">
 
 		<!-- Scripts -->
 			<script src="/js/jquery.min.js"></script>

@@ -11,7 +11,7 @@ TODO:
   * Gear Types.
   * ( I Think it will break if there is not at least one seeded - test this)
 * Hardcoded Types ("app/Types.php")
-* Hardcoded Gear list in
+* Hardcoded Gear list in 
 * Figure out what to do with Background Images:
     *  main.css
     *  style.css
@@ -20,12 +20,14 @@ TODO:
 * resources/views/layouts/newMain.blade.php is hardcoded
 * create sample apache .conf file
 * get example.env out of .gitignore
-
+  
 Installion for apache:
 1. create.conf file
 2. composer install
 3. edit .env file
 3. log in to mySQL, create DB you list in .env 'create database mcms;'
+4. php artisan migrate
+4. php artisan db:seed
 4. Dynamic link public directory for safety?: ln -s /var/www/MusiCMS/public /var/www/html/MusiCMS/public
 5. php artisan key:generate
 6. chmod 777 -R public/uploads/

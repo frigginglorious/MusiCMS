@@ -90,7 +90,7 @@ ul.icons li a {
 	}
 }
 .bx-wrapper, .bx-viewport, .bx-wrapper ul li, .sliderImg {
-    height: 600px !important; /* provide (max)height of slider */
+    /* height: 600px !important; /* provide (max)height of slider */
 	border: 0 !important;
 	margin: 0 !important;
 	/*border-image-width: 0 !important;*/
