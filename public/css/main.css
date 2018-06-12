@@ -2186,13 +2186,13 @@
 			#main > section.one {
 				background-color: #81918E;
 
-				background-image: url("/images/bg-pic-5.jpg");
+				background-image: url("/images/bg-pic-3.jpg");
 
 			}
 
 			#main > section.two {
 				background-color: #f5fafa;
-				background-image: url("/images/bg-pic-5.jpg");
+				background-image: url("/images/bg-pic-3.jpg");
 				background-repeat: no-repeat;
 				background-attachment: fixed;
 

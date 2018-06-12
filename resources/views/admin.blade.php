@@ -1,5 +1,5 @@
 <h1>
-  {{ env('SITE_NAME') }} Admin Testy1
+  {{ env('SITE_NAME') }} Admin View
 </h1>
 <ul>
     <li><a href="/clients">View/Edit Clients</a></li>

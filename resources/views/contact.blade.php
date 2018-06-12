@@ -13,7 +13,7 @@
 
       <p>
         <h1 itemscope="" itemtype="http://data-vocabulary.org/Organization" id="contactHead">Get in touch by sending me an email</h1>
-        <h3><a href="mailto:{{ APP_ENV('EMAIL_ADDRESS') }}" target="_top">{{ APP_ENV('EMAIL_ADDRESS') }}</a></h3>
+        <h3><a href="mailto:{{ env('EMAIL_ADDRESS') }}" target="_top">{{ env('EMAIL_ADDRESS') }}</a></h3>
     </p>
 
       {{-- <form method="post" action="#">
