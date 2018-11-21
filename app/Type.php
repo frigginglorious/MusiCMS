@@ -17,7 +17,7 @@ class Type extends Model
     }
     public static function nav()
     {
-        $nav = collect(["Studio", "Mic Locker", "Outboard", "Monitoring", "DAW", "Amps", "Instruments", "FX Pedals", "Misc"]);
+        $nav = collect(explode(',', env('DATA_TYPES')));
         return $nav;
     }
 }

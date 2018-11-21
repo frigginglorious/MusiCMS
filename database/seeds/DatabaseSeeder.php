@@ -60,72 +60,24 @@ class DatabaseSeeder extends Seeder
           'client_id' => '1',
           'role_id' => '1',
       ]);
-      DB::table('gears')->insert([
-          'type_id' => '1',
-          'name' => 'Live Room',
-          'short_description' => '23x32-15 Foot Vaulted Ceiling',
-      ]);
+
       DB::table('users')->insert([
         'name' => 'frigginglorious',
         'email' => 'frigginglorious'.'@gmail.com',
         'password' => bcrypt('changeMe'),
       ]);
-      DB::table('types')->insert([
-          'name' => 'Studio',
+      
+      foreach (collect(explode(',', env('DATA_TYPES'))) as $type){
+        
+        DB::table('types')->insert([
+          'name' => $type,
+        ]);
+      }
+      DB::table('gears')->insert([
+          'type_id' => '1',
+          'name' => 'Live Room',
+          'short_description' => '23x32-15 Foot Vaulted Ceiling',
       ]);
-      DB::table('types')->insert([
-          'name' => 'Mics',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Pre Amps',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Compressors',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'EQs',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Monitoring',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Artist Monitor Systems',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Conversion',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Software',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Computers',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Guitar Amps',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Bass Amps',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Guitars',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Keyboards',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Drums',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Guitar FX Pedals',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Miscellaneous',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'DI Boxes',
-      ]);
-      DB::table('types')->insert([
-          'name' => 'Cables',
-      ]);
+
   }
 }

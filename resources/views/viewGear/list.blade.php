@@ -36,8 +36,6 @@
 								<ul>
 								@foreach ($type->gear as $gear)
 
-
-
 									<li>{{$gear->name}}</li>
 									<li class="gear_short_description">{{$gear->short_description}}</li>
 
@@ -91,94 +89,103 @@
 	// });
 	$(document).ready(function(){
 		setTimeout(function(){
-			$grid.isotope('layout');
-			$grid.isotope({ filter: function() {
-				var matcher = $(this).find('h3').html().match("Studio");
-				return matcher;
-			} });
+      $grid.isotope('layout');
+      $grid.isotope({ filter: function() {
+//         var matcher = $(this).find('h3').html().match("Studio");
+        var matcher = $(this).find('h3').html().match("{{$types[0]['name']}}");
+        return matcher;
+      } });
+	  }, 200);
+    $(".subNav").click(function(){
+      var nav = $(this).html();
+      console.log(nav);
+      if (nav == "All"){
+        // nav = "Mics";
+        $grid.isotope({ filter: '*'});
+      }else if (nav == "Mic Locker"){
+        // nav = "Mics";
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("Mics");
+          return matcher;
+        } });
+      }else if(nav == "Outboard"){
+        nav = "Pre Amps Compressors EQs";
+        $grid.isotope({ filter: function() {
+          // var name = $(this).find('.name').text();
+          // return name.match( /ium$/ );
+          var matcher = $(this).find('h3').html().match("Pre Amps");
+          matcher += $(this).find('h3').html().match("Compressors");
+          matcher += $(this).find('h3').html().match("EQs");
 
-	}, 200);
-		$(".subNav").click(function(){
-			var nav = $(this).html();
-			console.log(nav);
-			if (nav == "All"){
-				// nav = "Mics";
-				$grid.isotope({ filter: '*'});
-			}else if (nav == "Mic Locker"){
-				// nav = "Mics";
-				$grid.isotope({ filter: function() {
-					var matcher = $(this).find('h3').html().match("Mics");
-					return matcher;
-				} });
-			}else if(nav == "Outboard"){
-				nav = "Pre Amps Compressors EQs";
-				$grid.isotope({ filter: function() {
-				  // var name = $(this).find('.name').text();
-				  // return name.match( /ium$/ );
-				  var matcher = $(this).find('h3').html().match("Pre Amps");
-				  matcher += $(this).find('h3').html().match("Compressors");
-				  matcher += $(this).find('h3').html().match("EQs");
+        //   console.log(matcher);
+          return matcher;
 
-				//   console.log(matcher);
-					return matcher;
+        } });
+      }else if (nav == "Monitoring"){
+        // nav = "Mics";
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("Monitoring");
+          matcher += $(this).find('h3').html().match("Artist Monitor Systems");
+          return matcher;
+        } });
+      }else if (nav == "DAW"){
+        // nav = "Mics";
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("Conversion");
+          matcher += $(this).find('h3').html().match("Software");
+          matcher += $(this).find('h3').html().match("Computers");
+          return matcher;
+        } });
+      }else if (nav == "Amps"){
+        // nav = "Mics";
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("Guitar Amps");
+          matcher += $(this).find('h3').html().match("Bass Amps");
+          return matcher;
+        } });
+      }else if (nav == "Instruments"){
+        // nav = "Mics";
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("Guitars");
+          matcher += $(this).find('h3').html().match("Keyboards");
+          matcher += $(this).find('h3').html().match("Drums");
+          return matcher;
+        } });
+      }else if (nav == "FX Pedals"){
+        // nav = "Mics";
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("Guitar FX Pedals");
+          return matcher;
+        } });
+      }else if (nav == "Misc"){
+        // nav = "Mics";
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("Miscellaneous");
+          matcher += $(this).find('h3').html().match("DI Boxes");
+          matcher += $(this).find('h3').html().match("Cables");
+          return matcher;
+        } });
+      }
+      @foreach($types as $type)
+      else if (nav == "{{$type['name']}}"){
+        $grid.isotope({ filter: function() {
+          var matcher = $(this).find('h3').html().match("{{$type['name']}}");
+          return matcher;
+        } });
+      }
+      @endforeach
+      else{
+        $grid.isotope({ filter: function() {
+          // var name = $(this).find('.name').text();
+          // return name.match( /ium$/ );
+          var matcher = $(this).find('h3').html().match(nav);
+          console.log(matcher);
+          return matcher;
 
-				} });
-			}else if (nav == "Monitoring"){
-				// nav = "Mics";
-				$grid.isotope({ filter: function() {
-					var matcher = $(this).find('h3').html().match("Monitoring");
-					matcher += $(this).find('h3').html().match("Artist Monitor Systems");
-					return matcher;
-				} });
-			}else if (nav == "DAW"){
-				// nav = "Mics";
-				$grid.isotope({ filter: function() {
-					var matcher = $(this).find('h3').html().match("Conversion");
-					matcher += $(this).find('h3').html().match("Software");
-					matcher += $(this).find('h3').html().match("Computers");
-					return matcher;
-				} });
-			}else if (nav == "Amps"){
-				// nav = "Mics";
-				$grid.isotope({ filter: function() {
-					var matcher = $(this).find('h3').html().match("Guitar Amps");
-					matcher += $(this).find('h3').html().match("Bass Amps");
-					return matcher;
-				} });
-			}else if (nav == "Instruments"){
-				// nav = "Mics";
-				$grid.isotope({ filter: function() {
-					var matcher = $(this).find('h3').html().match("Guitars");
-					matcher += $(this).find('h3').html().match("Keyboards");
-					matcher += $(this).find('h3').html().match("Drums");
-					return matcher;
-				} });
-			}else if (nav == "FX Pedals"){
-				// nav = "Mics";
-				$grid.isotope({ filter: function() {
-					var matcher = $(this).find('h3').html().match("Guitar FX Pedals");
-					return matcher;
-				} });
-			}else if (nav == "Misc"){
-				// nav = "Mics";
-				$grid.isotope({ filter: function() {
-					var matcher = $(this).find('h3').html().match("Miscellaneous");
-					matcher += $(this).find('h3').html().match("DI Boxes");
-					matcher += $(this).find('h3').html().match("Cables");
-					return matcher;
-				} });
-			}else{
-				$grid.isotope({ filter: function() {
-				  // var name = $(this).find('.name').text();
-				  // return name.match( /ium$/ );
-				  var matcher = $(this).find('h3').html().match(nav);
-				  console.log(matcher);
-					return matcher;
+        } });
+      }
 
-				} });
-			}
-
-		});
+    });
 		// $grid.imagesLoaded().progress( function() {
 		// 		$grid.isotope('layout');
 		// });
