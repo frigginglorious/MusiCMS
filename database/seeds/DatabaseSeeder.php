@@ -56,7 +56,7 @@ class DatabaseSeeder extends Seeder
           'name' => 'Musician',
           'icon' => 'fa fa-microphone',
       ]);
-      DB::table('clientRoles')->insert([
+      DB::table('client_roles')->insert([
           'client_id' => '1',
           'role_id' => '1',
       ]);
