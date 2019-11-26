@@ -24,13 +24,14 @@ TODO:
 Installion for apache:
 1. create.conf file
 2. composer install
-3. edit .env file
+3. edit .env file (mv .env.example .env)
 3. log in to mySQL, create DB you list in .env 'create database mcms;'
 4. php artisan migrate
 4. php artisan db:seed
 4. Dynamic link public directory for safety?: ln -s /var/www/MusiCMS/public /var/www/html/MusiCMS/public
 5. php artisan key:generate
 6. chmod 777 -R public/uploads/
+8. chmod 777 -R storage/
 
 <!-- sudo apt-get install composer
 php composer.phar require intervention/image -->
