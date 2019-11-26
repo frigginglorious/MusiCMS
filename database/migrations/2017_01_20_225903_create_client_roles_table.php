@@ -13,7 +13,7 @@ class CreateClientRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('clientRoles', function (Blueprint $table) {
+        Schema::create('client_roles', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->integer('role_id');
@@ -28,6 +28,6 @@ class CreateClientRolesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clientRoles');
+        Schema::dropIfExists('client_roles');
     }
 }
