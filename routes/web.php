@@ -26,7 +26,7 @@ Route::get('/', function () {
 // });
 
 
-Route::get('/client-list', 'ViewClientController@index');
+Route::get('/artist-list', 'ViewClientController@index');
 
 
 Route::get('/gear-list', 'ViewGearController@index');
@@ -64,7 +64,7 @@ Route::group(['middleware' => 'auth'], function () {
     //
     // });
 
-    Route::resource('/clients', 'ClientController');
+    Route::resource('/artists', 'ClientController');
 
     // Route::get('/home/clients', function () {
     //     // Uses Auth Middleware

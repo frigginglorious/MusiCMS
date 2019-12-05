@@ -70,7 +70,7 @@
 
 							-->
 							<ul>
-								<li><a href="/client-list" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Clients</span></a>
+								<li><a href="/artist-list" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Artists</span></a>
 									@if(isset($roles))
 										<ul class="subNavList">
 											<li class="subNav">All</li>
@@ -82,6 +82,7 @@
 									</ul>
 									@endif
 								</li>
+								<!--
 								<li><a href="/gear-list" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Gear</span></a>
 									@if(isset($types))
 										<ul class="subNavList">
@@ -95,7 +96,8 @@
 									</ul>
 
 									@endif
-								</li>
+								</li> 
+								-->
 								{{-- <li><a href="/gallery" id="gallery-link" class="skel-layers-ignoreHref"><span class="icon fa-picture-o">Gallery</span></a></li> --}}
 
 								<li><a href="/#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-street-view">About</span></a></li>

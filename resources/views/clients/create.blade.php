@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>Add New Client</h2>
+<h2>Add New Artist</h2>
 
 {!! Form::open(['action' => 'ClientController@store', 'method'=>'POST','files'=>'true']) !!}
   <div class="form-group">

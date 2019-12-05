@@ -2,7 +2,7 @@
   {{ env('SITE_NAME') }} Admin View
 </h1>
 <ul>
-    <li><a href="/clients">View/Edit Clients</a></li>
+    <li><a href="/artists">View/Edit Atists</a></li>
 
     <li><a href="/gear">View/Edit Gear</a></li>
 

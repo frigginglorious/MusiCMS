@@ -11,7 +11,7 @@
 
 	<header class="sliderDiv">
 			<div class="headerDiv">
-				<h2 class="pageTitle" id="pageTitle">Music Clients</h2>
+				<h2 class="pageTitle" id="pageTitle">Artists</h2>
 			</div>
 	</header>
 				{{-- <ul class="topList"> --}}
@@ -47,7 +47,7 @@
 		</div>
 	</div>
 	<footer>
-		{{-- <a href="#client-list" class="button scrolly">About</a> --}}
+		{{-- <a href="#artist-list" class="button scrolly">About</a> --}}
 	</footer>
 </section>
 

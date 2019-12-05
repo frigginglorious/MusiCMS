@@ -25,7 +25,7 @@
 		<a href="/">Home</a>
 
 
-		<a href="/client-list">Clients</a>
+		<a href="/artist-list">Clients</a>
 		<a href="/gear">Gear</a>
 		<a href="/contact">Contact</a>
 		<ul class="fa-ul">
