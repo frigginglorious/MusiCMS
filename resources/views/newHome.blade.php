@@ -9,13 +9,14 @@
       <header id="homeHeader">
         <img src="/images/logo.jpg" id="mainlogo">
 
-        <!-- <h1 style="color:white; font-family:diehl;text-align:center;">Tagline</h1> -->
+        <!-- <h1 style="color:white; font-family:diehl;text-align:center;">Events, Experience, Art & Music</h1> -->
 
       </header>
 
       <footer>
           <div class="videoWrapper">
               <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe> -->
+              <h1 style="color:white; font-family:diehl;text-align:center;">Events, Experience, Art & Music</h1>
           </div>
         {{-- <a href="#about" class="button scrolly">About</a> --}}
       </footer>

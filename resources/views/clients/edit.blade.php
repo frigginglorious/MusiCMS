@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-  {!! Form::model($client, ['route' => ['clients.update', $client->id], 'method'=>'PUT','files'=>'true']) !!}
+  {!! Form::model($client, ['route' => ['artists.update', $client->id], 'method'=>'PUT','files'=>'true']) !!}
     <div class="form-group">
       <input name="name" class="form-control" placeholder="{{$client->name}}"></input>
     </div>
