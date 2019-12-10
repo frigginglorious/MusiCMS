@@ -28,7 +28,8 @@ body{
   /*background-position: center !important;*/
   min-height: 100vh !important;
 
-  background-image: url("/images/bg-pic-3.jpg");
+  /* background-image: url("/images/bg-pic-3.jpg"); */
+  background-color: #272F2A;
   margin-left: 150px !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -68,7 +69,15 @@ ul.icons li a {
     margin-left: 0px !important;
   }
   #mainlogo{
-	  transform: translate(0, -550px) !important;
+	  transform: translate(0, -250px) !important;
+  }
+
+  .gridBandImg{
+	  max-width: 100% !important;
+
+  }
+  .gridImgDiv{
+	  max-width: 5em;
   }
 
 }
@@ -265,18 +274,41 @@ left: 0;
 }
 .gridBandName .gridRoles{
 	background: rgba(0,0,0,.5);
-	z-index: 999;
+	/* z-index: 999; */
+	width: 100%;
+	/* background-color: black; */
+	/* color: white !important; */
 }
 .gridBandName{
 	display:inline;
-	max-width: 100%;
+	/* max-width: 100%; */
 	position: absolute;
 	top:0px;
+	color: white !important;
+	background: rgba(0,0,0,.5);
+	box-sizing: border-box;
+	/* box-sizing: content-box; */
+	width: 100%;
+	left:0px;
+	color: white !important;
+	
+}
+
+.contentWrapper h1{
+	color:white;
+	font-family:diehl;
+	text-align:center;
+	font-size: 1.5em;
+
+}
+.eachContent{
+	font-size: 1em;
 }
 .gridRoles{
 	position: absolute;
 	bottom:5px;
 	left: 8px;
+	background: rgba(0,0,0,.5);
 }
 .gridRoles i:hover{
 	cursor: pointer;

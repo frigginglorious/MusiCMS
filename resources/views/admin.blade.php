@@ -2,10 +2,12 @@
   {{ env('SITE_NAME') }} Admin View
 </h1>
 <ul>
-    <li><a href="/artists">View/Edit Atists</a></li>
+    <li><a href="/admin/artists">View/Edit Atists</a></li>
 
-    <li><a href="/gear">View/Edit Gear</a></li>
+    <li><a href="/admin/gear">View/Edit Gear</a></li>
 
-    <li><a href="/sliderPics">View/Edit Slider Photos</a></li>
+    <li><a href="/admin/sliderPics">View/Edit Slider Photos</a></li>
+
+    <li><a href="/admin/pageContent">View/Edit Page Content</a></li>
 
 </ul>

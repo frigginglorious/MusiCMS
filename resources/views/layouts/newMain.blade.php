@@ -157,7 +157,7 @@
 
 				<!-- Copyright -->
 					<ul class="license">
-						<li>{{ env('SITE_NAME') }}. All rights perversed.</li><li>Built With: <a href="https://github.com/frigginglorious/MusiCMS" target="_blank">musicCns</a></li>
+						<li>{{ env('SITE_NAME') }}. All rights perversed.</li><li>Built With: <a href="https://github.com/frigginglorious/MusiCMS" target="_blank">musicCMS</a></li>
 					</ul>
 
 			</div>

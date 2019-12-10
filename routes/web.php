@@ -17,9 +17,7 @@ if (version_compare(PHP_VERSION, '7.2.0', '>=')) {
     // error_reporting(E_ALL ^ E_WARNING); // Maybe this is enough
 }
 
-Route::get('/', function () {
-    return view('newHome');
-});
+Route::get('/', 'PageController@index');
 
 // Route::get('/clients', function () {
 //     return view('clients');
@@ -42,15 +40,19 @@ Auth::routes();
 // Route::get('/', 'HomeController@index');
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', function ()    {
-        // Uses Auadminth Middleware
-        return view('admin');
+Route::get('home', function ()    {
+    // Uses Auadminth Middleware
+    return view('admin');
 
-    });
+});
 
-    Route::get('/sliderPics', 'sliderPicsController@index');
-    Route::get('/sliderPics/destroy/{request}', 'sliderPicsController@destroy');
-    Route::post('/sliderPics/store','sliderPicsController@store');
+Route::group(['prefix' => '/admin'], function () {
+
+
+
+    Route::get('sliderPics', 'sliderPicsController@index');
+    Route::get('sliderPics/destroy/{request}', 'sliderPicsController@destroy');
+    Route::post('sliderPics/store','sliderPicsController@store');
     // ,[
     //     'as' => 'sliderPics.destroy',
     //     'uses' => 'sliderPicsController@destroy'
@@ -64,11 +66,17 @@ Route::group(['middleware' => 'auth'], function () {
     //
     // });
 
-    Route::resource('/artists', 'ClientController');
+    Route::resource('artists', 'ClientController');
+
+    Route::resource('pageContent', 'PageContentController');
 
     // Route::get('/home/clients', function () {
     //     // Uses Auth Middleware
     // });
-    Route::resource('/gear', 'GearController');
+    Route::resource('gear', 'GearController');
+
+    
 
 });
+});
+

@@ -33,6 +33,14 @@ Installion for apache:
 6. chmod 777 -R public/uploads/
 8. chmod 777 -R storage/
 
+
+Upgrade laravel 6:
+*comment out routes in api.php and routes.php
+*composer update
+*composer install
+*composer dump-autoload
+*php artisan view:clear
+
 <!-- sudo apt-get install composer
 php composer.phar require intervention/image -->
 php artisan optimize

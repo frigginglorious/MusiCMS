@@ -177,8 +177,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
-        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
+        // Collective\Html\HtmlServiceProvider::class,
+        // GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
 
     ],
