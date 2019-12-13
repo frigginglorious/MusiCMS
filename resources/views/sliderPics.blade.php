@@ -6,7 +6,7 @@
     <li>{{ $file }}<img style="height: 200px;" src="/uploads/sliderPics/{{$file}}" />
 
 
-    <a href="/sliderPics/destroy/{{$file}}">Destroy</a></li>
+    <a href="sliderPics/destroy/{{$file}}">Destroy</a></li>
 @endforeach
 </ul>
 {!! Form::open(['action' => 'sliderPicsController@store', 'method'=>'POST','files'=>'true']) !!}
