@@ -7,7 +7,7 @@
 
 @foreach($clients as $client)
 
-	<li><a href="/artists/{{$client->id}}">{{$client->name}}</a>(<a href="/artists/{{$client->id}}/edit">Edit</a>)</li>
+	<li><a href="artists/{{$client->id}}">{{$client->name}}</a>(<a href="artists/{{$client->id}}/edit">Edit</a>)</li>
 
 	<form action="{{ URL::route('artists.destroy',$client->id) }}" method="POST">
 	    <input type="hidden" name="_method" value="DELETE">
