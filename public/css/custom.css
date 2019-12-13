@@ -80,6 +80,18 @@ ul.icons li a {
   .gridImgDiv{
 	  max-width: 5em;
   }
+  .gridBandName{
+	  /* display: none !important; */
+	  /* font-size: 1em;
+	  overflow: hidden;
+	  display: block; */
+	  white-space: nowrap;
+	  text-overflow: ellipsis; 
+	  overflow: hidden;
+  }
+  .gridRoles{
+	  display: none;
+  }
 
 }
 @media screen and (min-width: 961px){
