@@ -12,7 +12,7 @@
 			<div class="grid">
 			<div class="grid-item">
 			<div class="imgDiv">
-				<img class="bandImg" src="/images/logo.jpg"/>
+				<img class="bandImg" src="/images/logo.png"/>
 			</div>
 			<span class="bandCaption"> <a href="https://www.website.com/">A Band</a>
 

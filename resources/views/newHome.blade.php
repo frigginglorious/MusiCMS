@@ -7,7 +7,7 @@
     <div class="container">
 
       <header id="homeHeader">
-        <img src="/images/logo.jpg" id="mainlogo">
+        <img src="/images/logo.png" id="mainlogo">
 
         <!-- <h1 style="color:white; font-family:diehl;text-align:center;">Events, Experience, Art & Music</h1> -->
 

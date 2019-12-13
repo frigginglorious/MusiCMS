@@ -16,4 +16,4 @@
 	</form>
 @endforeach
 
-<a href="/artists/create">Add New Artist</a>
+<a href="artists/create">Add New Artist</a>

@@ -20,7 +20,7 @@
 
 	@section('sidebar')
 	<div id="nav">
-		<img src="/images/logo.jpg" id="uplogo">
+		<img src="/images/logo.png" id="uplogo">
 
 		<a href="/">Home</a>
 

@@ -1,4 +1,4 @@
-<h1>All Page Contnets</h1>
+<h1>All Page Contents</h1>
 <ul>
 @foreach ($pageContent as $pc)
 

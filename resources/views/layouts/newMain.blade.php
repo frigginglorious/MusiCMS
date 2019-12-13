@@ -50,7 +50,7 @@
 					<!-- Logo -->
 						<a href="/">
 						<div id="logo">
-							<span class="image avatar48"><img src="/images/logo.jpg" id="uplogo" alt="{{ env('SITE_NAME') }} Logo" /></span>
+							<span class="image avatar48"><img src="/images/logo.png" id="uplogo" alt="{{ env('SITE_NAME') }} Logo" /></span>
 
 						</div>
 						</a>

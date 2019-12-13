@@ -70,6 +70,8 @@ Route::group(['prefix' => '/admin'], function () {
 
     Route::resource('pageContent', 'PageContentController');
 
+    Route::resource('roles', 'RoleController');
+
     // Route::get('/home/clients', function () {
     //     // Uses Auth Middleware
     // });
