@@ -18,7 +18,7 @@
           <div class="contentWrapper">
               <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe> -->
               <h1>{{$pc->title}}</h1>
-              <p class="eachContent">{{$pc->content}}</p>
+              <p class="eachContent">{!! $pc->content !!}</p>
           </div>
         @endforeach
         {{-- <a href="#about" class="button scrolly">About</a> --}}
@@ -32,7 +32,7 @@
     {{-- <div class="container">
 
       <header>
-        <h2>About {{ env('SITE_NAME') }}</h2>
+        <h2>About {{ config('app.SITE_NAME') }}</h2>
       </header>
 
       <blockquote>"Being interesting is overrated"</blockquote>

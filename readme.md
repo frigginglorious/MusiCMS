@@ -35,11 +35,19 @@ Installion for apache:
 
 
 Upgrade laravel 6:
-*comment out routes in api.php and routes.php
-*composer update
-*composer install
-*composer dump-autoload
-*php artisan view:clear
+* comment out routes in api.php and routes.php
+* composer update
+* composer install
+* omposer dump-autoload
+* php artisan view:clear
+
+$ cd laravel_project
+
+$ php artisan cache:clear
+
+$ chmod -R 777 storage
+
+$ composer dump-autoload
 
 <!-- sudo apt-get install composer
 php composer.phar require intervention/image -->

@@ -1,3 +1,7 @@
+@extends('layouts.admin')
+
+@section('content')
+
 <h1>All Roles</h1>
 <ul>
 @foreach ($roles as $r)
@@ -9,3 +13,5 @@
 @endforeach
 </ul>
 <a href="roles/create">Create</a>
+
+@endsection

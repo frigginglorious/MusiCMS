@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'MusiCMS',
 
     /*
     |--------------------------------------------------------------------------
@@ -232,5 +232,15 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
     ],
+
+    'SITE_NAME'=>'IndoorLionRoar',
+
+    'FACEBOOK_URL'=>'user_name',
+    'INSTAGRAM_URL'=>'user_name',
+    'YOUTUBE_URL'=>'user_name',
+
+    'EMAIL_ADDRESS'=>'email@add.ress',
+
+    'BACKGROUND_COLOR'=>'272F2A',
 
 ];

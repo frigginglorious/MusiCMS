@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-    <title>{{ env('SITE_NAME') }}</title>
+    <title>{{ config('app.SITE_NAME') }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -50,7 +50,7 @@
 					<!-- Logo -->
 						<a href="/">
 						<div id="logo">
-							<span class="image avatar48"><img src="/images/logo.png" id="uplogo" alt="{{ env('SITE_NAME') }} Logo" /></span>
+							<span class="image avatar48"><img src="/images/logo.png" id="uplogo" alt="{{ config('app.SITE_NAME') }} Logo" /></span>
 
 						</div>
 						</a>
@@ -111,10 +111,10 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="https://www.facebook.com/{{ env('SITE_NAME') }}" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/{{ env('SITE_NAME') }}" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.facebook.com/{{ config('app.SITE_NAME') }}" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/{{ config('app.SITE_NAME') }}" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 							{{-- <li><a href="/contact" class="icon fa-envelope"><span class="label">Email</span></a></li> --}}
-							<li><a href="https://www.youtube.com/{{ env('SITE_NAME') }}" class="icon fa-youtube" target="_blank"><span class="label">Youtube</span></a></li>
+							<li><a href="https://www.youtube.com/{{ config('app.SITE_NAME') }}" class="icon fa-youtube" target="_blank"><span class="label">Youtube</span></a></li>
 						</ul>
 
 				</div>
@@ -140,7 +140,7 @@
 					</div>
 					{{-- <div class="medianDiv">
 						@for($i = -100; $i <= 100; $i++)
-							<span class="medianText" style="margin-left:{{$i * 10}}px !important; z-index:{{$i}}">{{ env('SITE_NAME') }}</span>
+							<span class="medianText" style="margin-left:{{$i * 10}}px !important; z-index:{{$i}}">{{ config('app.SITE_NAME') }}</span>
 						@endfor
 					</div> --}}
 					@show
@@ -157,7 +157,7 @@
 
 				<!-- Copyright -->
 					<ul class="license">
-						<li>{{ env('SITE_NAME') }}. All rights perversed.</li><li>Built With: <a href="https://github.com/frigginglorious/MusiCMS" target="_blank">musicCMS</a></li>
+						<li>{{ config('app.SITE_NAME') }}. All rights perversed.</li><li>Built With: <a href="https://github.com/frigginglorious/MusiCMS" target="_blank">musicCMS</a></li>
 					</ul>
 
 			</div>

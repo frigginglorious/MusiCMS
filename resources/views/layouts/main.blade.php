@@ -2,7 +2,7 @@
 <!-- saved from url=(0029)/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
-<title>{{ env('SITE_NAME') }}</title>
+<title>{{ config('app.SITE_NAME') }}</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 

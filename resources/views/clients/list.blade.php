@@ -17,3 +17,5 @@
 @endforeach
 
 <a href="artists/create">Add New Artist</a>
+
+@endsection

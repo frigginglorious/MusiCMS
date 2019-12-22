@@ -1,7 +1,11 @@
+@extends('layouts.admin')
 
 
 
-<h1>Create Page Content</h1>
+@section('content')
+<script src="/tinymce/js/tinymce/tinymce.min.js"></script>
+
+<h1>Create Page Contents</h1>
 
 {{-- {!! Form::model(['action' => 'PageContentsController@store']) !!} --}}
 
@@ -13,18 +17,17 @@ $table->binary('content'); --}}
 {{-- {!! Form::label('textarea', 'E-Mail Address') !!} --}}
 {!! Form::text('title', 'Title Entry') !!}
 
-{!! Form::textarea('content', 'Content Entry') !!}
+{!! Form::textarea('content', 'Content Entry', array('class' => 'fillContent', 'id' => 'theContent')) !!}
 
 {!! Form::submit('Click Me!') !!}
 {!! Form::close() !!}
 
 
-<script src="/tinymce/js/tinymce/tinymce.min.js"></script>
 
 <script>
 
 tinymce.init({
-  selector: 'textarea',
+  selector: '.fillContent',
   height: 500,
   menubar: false,
   plugins: [
@@ -39,3 +42,5 @@ tinymce.init({
 });
 
 </script>
+
+@endsection

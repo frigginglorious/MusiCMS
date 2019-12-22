@@ -1,4 +1,6 @@
+@extends('layouts.admin')
 
+@section('content')
 <h1>Create Artist Role</h1>
 
 {{-- {!! Form::model(['action' => 'PageContentsController@store']) !!} --}}
@@ -15,3 +17,5 @@ $table->binary('content'); --}}
 
 {!! Form::submit('Create!') !!}
 {!! Form::close() !!}
+
+@endsection

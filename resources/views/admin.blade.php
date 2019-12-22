@@ -1,5 +1,5 @@
 <h1>
-  {{ env('SITE_NAME') }} Admin View
+  {{ config('app.SITE_NAME') }} Admin View
 </h1>
 <ul>
     <li><a href="/admin/artists">View/Edit Artists</a></li>

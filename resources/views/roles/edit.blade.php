@@ -1,4 +1,6 @@
+@extends('layouts.admin')
 
+@section('content')
 <h1>Edit Artist Role</h1>
 
 {{-- {!! Form::model(['action' => 'PageContentsController@store']) !!} --}}
@@ -18,3 +20,4 @@
 {!! Form::model($role, ['route' => ['roles.destroy', $role]],'DELETE') !!}
 {!! Form::submit('DELETE!') !!}
 {!! Form::close() !!}
+@endsection
