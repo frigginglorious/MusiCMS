@@ -4,7 +4,7 @@
 
 <title>{{ config('app.SITE_NAME') }}</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/fontawesome.min.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">

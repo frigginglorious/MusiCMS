@@ -12,10 +12,16 @@ $table->binary('content'); --}}
 
 {{-- {!! Form::label('textarea', 'E-Mail Address') !!} --}}
 {!! Form::text('name', 'Name Entry') !!}
-{!! Form::text('icon', 'Icon Entry') !!}
+{!! Form::text('icon', 'Icon Entry', array('class' => 'icon', 'id' => 'theIcon')) !!}
 
 
 {!! Form::submit('Create!') !!}
 {!! Form::close() !!}
 
+
+<script src='/js/fontawesome-iconpicker/dist/js/fontawesome-iconpicker.min.js'></script>
+
+<script>
+    $('.icon').iconpicker();
+</script>
 @endsection

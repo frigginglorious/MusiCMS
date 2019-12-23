@@ -4,7 +4,7 @@
 
 	<h2>All Artists</h2>
 
-
+<ul>
 @foreach($clients as $client)
 
 	<li><a href="artists/{{$client->id}}">{{$client->name}}</a>(<a href="artists/{{$client->id}}/edit">Edit</a>)</li>
@@ -15,7 +15,7 @@
 	    <button>Delete</button>
 	</form>
 @endforeach
-
-<a href="artists/create">Add New Artist</a>
+</ul>
+<a href="/admin/artists/create">Add New Artist</a>
 
 @endsection

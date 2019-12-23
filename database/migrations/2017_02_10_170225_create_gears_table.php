@@ -14,7 +14,7 @@ class CreateGearsTable extends Migration
     public function up()
     {
         Schema::create('gears', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('name');
             $table->string('short_description');
             $table->integer('type_id');

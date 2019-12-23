@@ -3,15 +3,22 @@
 @section('content')
 
 <h1>All Roles</h1>
-<ul>
+<table>
 @foreach ($roles as $r)
-
-<li>
-<a href="roles/{{$r->id}}/edit">{{$r->name}}</a>
-</li>
-
+<tr>
+    <td>
+        <a href="/admin/roles/{{$r->id}}/edit">{{$r->name}}</a>
+    </td>
+    <td>
+        <form action="{{ URL::route('roles.destroy',$r->id) }}" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <button>Delete</button>
+        </form>
+    </td>
+</tr>
 @endforeach
-</ul>
-<a href="roles/create">Create</a>
+</table>
+<a href="/admin/roles/create">Create</a>
 
 @endsection
