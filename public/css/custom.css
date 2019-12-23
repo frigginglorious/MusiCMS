@@ -6,6 +6,8 @@ body{
   font-family: 'diehl' !important;
   height:100vh !important;
 }
+
+
 #allWrapper{
 	min-height:100vh;
 	position:relative;
@@ -72,7 +74,10 @@ ul.icons li a {
 	  transform: translate(0, -10em) !important;
 	  max-width:40%;
   }
-
+  iframe{
+	max-width:100%;
+	/* height: auto !important; */
+}
   .gridBandImg{
 	  max-width: 100% !important;
 
