@@ -1959,7 +1959,7 @@
 
 		.icon:before {
 			display: inline-block;
-			font-family: FontAwesome;
+			font-family: 'Font Awesome 5 Free';
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
@@ -2430,13 +2430,13 @@
 				}
 
 					#headerToggle .toggle:before {
-						font-family: FontAwesome;
+						font-family: "Font Awesome 5 Free";
 						text-decoration: none;
 						font-style: normal;
 						font-weight: normal;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
-						content: '\f0c9';
+						content: "\f0c9";
 						color: #fff;
 						font-size: 18px;
 						line-height: 2.25em;
