@@ -23,7 +23,7 @@
 {!! Form::close() !!}
 
 
-<script src='/js/fontawesome-iconpicker/dist/js/fontawesome-iconpicker.min.js'></script>
+<script src='/js/fontawesome-iconpicker.min.js'></script>
 
 <script>
 $('.icon').iconpicker();
