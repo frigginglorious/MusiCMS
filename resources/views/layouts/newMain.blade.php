@@ -72,7 +72,7 @@
 
 							-->
 							<ul>
-								<li><a href="/artist-list" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Artists</span></a>
+								<li><a href="/artist-list" id="top-link" class="skel-layers-ignoreHref">Artists <i class="fas fa-users"></i></a>
 									@if(isset($roles))
 										<ul class="subNavList">
 											<li class="subNav">All</li>
@@ -85,7 +85,7 @@
 									@endif
 								</li>
 								<!--
-								<li><a href="/gear-list" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Gear</span></a>
+								<li><a href="/gear-list" id="portfolio-link" class="skel-layers-ignoreHref"><i class="icon fa-th">Gear</i></a>
 									@if(isset($types))
 										<ul class="subNavList">
 											<li class="subNav">All</li>
@@ -100,10 +100,10 @@
 									@endif
 								</li> 
 								-->
-								{{-- <li><a href="/gallery" id="gallery-link" class="skel-layers-ignoreHref"><span class="icon fa-picture-o">Gallery</span></a></li> --}}
+								{{-- <li><a href="/gallery" id="gallery-link" class="skel-layers-ignoreHref"><i class="icon fa-picture-o">Gallery</i></a></li> --}}
 
-								<li><a href="/#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-street-view">About</span></a></li>
-								<li><a href="/contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+								<li><a href="/#about" id="about-link" class="skel-layers-ignoreHref">About <i class="fas fa-street-view"></i></a></li>
+								<li><a href="/contact" id="contact-link" class="skel-layers-ignoreHref">Contact <i class="fas fa-envelope"></i></a></li>
 							</ul>
 						</nav>
 
@@ -113,10 +113,10 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="https://www.facebook.com/{{ config('app.SITE_NAME') }}" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/{{ config('app.SITE_NAME') }}" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.facebook.com/{{ config('app.SITE_NAME') }}" class="fab fa-facebook-square" target="_blank"></a></li>
+							<li><a href="https://www.instagram.com/{{ config('app.SITE_NAME') }}" class="fab fa-instagram" target="_blank"></a></li>
 							{{-- <li><a href="/contact" class="icon fa-envelope"><span class="label">Email</span></a></li> --}}
-							<li><a href="https://www.youtube.com/{{ config('app.SITE_NAME') }}" class="icon fa-youtube" target="_blank"><span class="label">Youtube</span></a></li>
+							<li><a href="https://www.youtube.com/{{ config('app.SITE_NAME') }}" class="fab fa-youtube" target="_blank"></a></li>
 						</ul>
 
 				</div>
