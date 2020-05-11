@@ -16,6 +16,6 @@
     "vue-resource": "^1.0.3"
   },
   "dependencies": {
-    "tinymce": "^5.1.4"
+    "tinymce": "^5.2.2"
   }
 }
